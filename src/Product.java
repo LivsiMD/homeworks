@@ -36,7 +36,7 @@ public class Product {
 //Переопределение функций для ввывода продукта. сравнения
     @Override
     public String toString() {
-        return title;
+        return title + " (" + cost + " руб.)";
     }
 
     @Override

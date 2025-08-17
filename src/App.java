@@ -1,4 +1,5 @@
 import java.util.*;
+import java.time.LocalDate;
 
 public class App {
     public static void main(String[] args) {
@@ -41,7 +42,7 @@ public class App {
         }
 
 // Ввод продуктов
-        System.out.println("Введите продукты (пример: Хлеб = 40; Молоко = 60), пустая строка - конец:");
+        System.out.println("Введите продукты (пример: Хлеб = 40; Молоко = 60; если товар со скидкой формат - Товар = Цена:Процент скидки:Дата окончания скидки), пустая строка - конец:");
 
         //Данная конструкция позволяет организовать многостроковый ввод собирая строку из несколькоких и вставлять пробел между строк для разделения информации
         StringBuilder productInput = new StringBuilder();
@@ -64,13 +65,25 @@ public class App {
             String costStr = parts[1].trim();
 
             try {
-                int cost = Integer.parseInt(costStr);
-                Product product = new Product(productName, cost);
+                Product product;
+                if (costStr.contains(":")) {
+                    // Формат скидочного продукта: цена:скидка:год-месяц-день
+                    String[] vals = costStr.split(":");
+                    if (vals.length != 3) {
+                        throw new IllegalArgumentException("Неверный формат скидочного продукта: " + costStr);
+                    }
+                    int cost = Integer.parseInt(vals[0]);
+                    int discount = Integer.parseInt(vals[1]);
+                    LocalDate validUntil = LocalDate.parse(vals[2]);
+                    product = new DiscountProduct(productName, cost, discount, validUntil);
+                } else {
+                    // Обычный продукт
+                    int cost = Integer.parseInt(costStr);
+                    product = new Product(productName, cost);
+                }
                 products.put(productName, product);
-            } catch (NumberFormatException e) {
-                System.out.println("Ошибка в числе у продукта " + productName);
-            } catch (IllegalArgumentException e) {
-                System.out.println(e.getMessage());
+            } catch (Exception e) {
+                System.out.println("Ошибка у продукта " + productName + ": " + e.getMessage());
             }
         }
 

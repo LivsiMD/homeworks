@@ -44,7 +44,7 @@ public class Person {
         } else {
             bag.add(product);
             money -= product.getCost();
-            System.out.println(name + " купил " + product.getName());
+            System.out.println(name + " купил " + product.getName() + " Цена " + product.getCost()); //дополнен ввывод ценной товара, для проверки работы скидок
             return true;
         }
     }
