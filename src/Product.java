@@ -13,6 +13,13 @@ public class Product {
         if (cost < 0) {
             throw new IllegalArgumentException("Стоимость продукта не может быть отрицательной");
         }
+        if (title.length() < 3) {
+            throw new IllegalArgumentException("Название продукта слишком короткое");
+        }
+        if (title.matches("\\d+")) {
+            throw new IllegalArgumentException("Название продукта не может состоять только из цифр");
+        }
+
         this.title = title;
         this.cost = cost;
     }
