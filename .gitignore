@@ -1,29 +1,44 @@
-### IntelliJ IDEA ###
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+# === Java ===
+*.class
+*.jar
+*.war
+*.ear
+*.iml
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
+# === Папки сборки ===
+/out/
+/build/
+/target/
+
+# === IntelliJ IDEA ===
+.idea/
+/*.iws
+/*.ipr
+/*.iml
+
+# === Eclipse ===
 .project
-.settings
-.springBeans
-.sts4-cache
+.classpath
+.settings/
 bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-
-### VS Code ###
+# === VS Code ===
 .vscode/
 
-### Mac OS ###
+# === Mac OS ===
 .DS_Store
+
+# === Windows ===
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# === Логи ===
+*.log
+
+# === Кэш ===
+*.swp
+*.swo
+
+# === Секретные/временные файлы ===
+/data/results.txt
