@@ -1,0 +1,15 @@
+D:\Ucheba\Java\DZ\Атесстация_2\java-console-game-template\src\com\example\dungeon\Main.java
+D:\Ucheba\Java\DZ\Атесстация_2\java-console-game-template\src\com\example\dungeon\core\Command.java
+D:\Ucheba\Java\DZ\Атесстация_2\java-console-game-template\src\com\example\dungeon\core\Game.java
+D:\Ucheba\Java\DZ\Атесстация_2\java-console-game-template\src\com\example\dungeon\core\InvalidCommandException.java
+D:\Ucheba\Java\DZ\Атесстация_2\java-console-game-template\src\com\example\dungeon\core\SaveLoad.java
+D:\Ucheba\Java\DZ\Атесстация_2\java-console-game-template\src\com\example\dungeon\core\WorldInfo.java
+D:\Ucheba\Java\DZ\Атесстация_2\java-console-game-template\src\com\example\dungeon\model\Entity.java
+D:\Ucheba\Java\DZ\Атесстация_2\java-console-game-template\src\com\example\dungeon\model\GameState.java
+D:\Ucheba\Java\DZ\Атесстация_2\java-console-game-template\src\com\example\dungeon\model\Item.java
+D:\Ucheba\Java\DZ\Атесстация_2\java-console-game-template\src\com\example\dungeon\model\Key.java
+D:\Ucheba\Java\DZ\Атесстация_2\java-console-game-template\src\com\example\dungeon\model\Monster.java
+D:\Ucheba\Java\DZ\Атесстация_2\java-console-game-template\src\com\example\dungeon\model\Player.java
+D:\Ucheba\Java\DZ\Атесстация_2\java-console-game-template\src\com\example\dungeon\model\Potion.java
+D:\Ucheba\Java\DZ\Атесстация_2\java-console-game-template\src\com\example\dungeon\model\Room.java
+D:\Ucheba\Java\DZ\Атесстация_2\java-console-game-template\src\com\example\dungeon\model\Weapon.java
