@@ -6,7 +6,7 @@
   </component>
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseAssistantManager">
@@ -25,7 +25,7 @@
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="e84f0c8f-4814-4783-b5a5-1935ed7e1066">
       <console name="Connection" type="STANDARD" schema="orders_db" session="Main" />
-      <console name="JavaSQL" type="STANDARD" schema="orders_db" session="Main" />
+      <console name="JavaSQL" type="STANDARD" schema="pg_catalog" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -38,6 +38,9 @@
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="e84f0c8f-4814-4783-b5a5-1935ed7e1066" />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="e84f0c8f-4814-4783-b5a5-1935ed7e1066" dataset="public.customer" active-filter-id="" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
