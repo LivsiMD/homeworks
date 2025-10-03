@@ -61,7 +61,7 @@ public class App {
                     int rows = ps.executeUpdate();
 
                     if (rows > 0) {
-                        // Получаем сгенерированный ID (если есть автогенерация)
+                        // Получение ID
                         try (ResultSet rs = ps.getGeneratedKeys()) {
                             int id = -1;
                             if (rs.next()) {
@@ -173,6 +173,7 @@ public class App {
                     System.out.println("+-------------------------------+\n");
                 }
 
+                // Результаты выполнения test-queries.sql в IDE в консоль по условиям задачи
                 System.out.println("\n=== Выполнение test-queries.sql ===");
                 SqlRunner.run(conn, "src/main/resources/test-queries.sql");
 

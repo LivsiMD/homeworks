@@ -5,6 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.sql.*;
 
+//Класс для реализиции выполнения test-queries.sql в IDE
 public class SqlRunner {
     public static void run(Connection conn, String filePath) {
         System.out.println("=== Выполнение " + filePath + " ===");
